@@ -22,30 +22,3 @@ Practicing basic financial logic
 
 Extending into full trading apps or games
 
-🚀 Getting Started
-Clone the repo:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/stock-market-simulator.git
-Open index.html in your browser.
-
-No build tools, no dependencies — just open and play!
-
-📌 Future Plans (Optional Ideas)
-Add multiple stocks
-
-Integrate real-time data from stock APIs (e.g., Alpha Vantage, Finnhub)
-
-Add user authentication and leaderboard
-
-Save progress with localStorage or a backend
-
-🛠️ Tech Stack
-HTML
-
-CSS
-
-JavaScript (Vanilla)
-
