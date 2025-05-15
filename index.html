@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Market Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Stock Market Simulator</h1>
+    <div class="stock-info">
+      <p><strong>Stock:</strong> ABC Corp</p>
+      <p><strong>Price:</strong> ₹<span id="stockPrice">100.00</span></p>
+    </div>
+
+    <div class="portfolio">
+      <p><strong>Cash:</strong> ₹<span id="cash">100000</span></p>
+      <p><strong>Shares Owned:</strong> <span id="shares">0</span></p>
+      <p><strong>Total Value:</strong> ₹<span id="totalValue">100000</span></p>
+    </div>
+
+    <div class="actions">
+      <input type="number" id="quantity" placeholder="Enter quantity" min="1" />
+      <button onclick="buyStock()">Buy</button>
+      <button onclick="sellStock()">Sell</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
