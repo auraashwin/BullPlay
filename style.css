@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.stock-info, .portfolio, .actions {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 48%;
+  padding: 8px;
+  margin-right: 2%;
+  cursor: pointer;
+}
