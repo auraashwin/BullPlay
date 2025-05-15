@@ -1,4 +1,4 @@
-const apiKey = "YOUR_API_KEY"; // Replace with Twelve Data API key
+const apiKey = "2504ec80842a4443a2a7e4c1ed324842"; // Replace with Twelve Data API key
 let cash = 100000;
 let stocks = [
   { symbol: "AAPL", name: "Apple", shares: 0, price: 0 },
