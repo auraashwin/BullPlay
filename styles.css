@@ -1,43 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f3f6f9;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  background: white;
+  max-width: 800px;
+  margin: auto;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
 }
 
-h1 {
-  text-align: center;
-}
-
-.portfolio-summary, .stock-card {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
+.stock {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 15px;
   border-radius: 8px;
 }
 
-.stock-card {
-  margin-bottom: 20px;
-}
-
-input {
+input[type="number"] {
   width: 60px;
-  margin-right: 5px;
-  padding: 4px;
 }
 
 button {
-  padding: 4px 8px;
-  margin-right: 5px;
-  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px 10px;
 }
+
+.chart-section {
+  margin-top: 30px;
+}
+
