@@ -1,6 +1,19 @@
-let stockPrice = 100;
+const apiKey = 'ebf779398594498d8c45b400a305cd9a'; // Replace this with your real key
+const symbol = 'AAPL'; // You can change this to TSLA, MSFT, etc.
+let stockPrice = 0;
 let cash = 100000;
 let shares = 0;
+
+async function fetchPrice() {
+  try {
+    const response = await fetch(`https://api.twelvedata.com/price?symbol=${symbol}&apikey=${apiKey}`);
+    const data = await response.json();
+    stockPrice = parseFloat(data.price);
+    updateDisplay();
+  } catch (err) {
+    console.error("Error fetching stock price:", err);
+  }
+}
 
 function updateDisplay() {
   document.getElementById("stockPrice").textContent = stockPrice.toFixed(2);
@@ -32,11 +45,8 @@ function sellStock() {
   }
 }
 
-// Simulate price changes
-setInterval(() => {
-  const change = (Math.random() * 4 - 2); // -2 to +2
-  stockPrice = Math.max(1, stockPrice + change);
-  updateDisplay();
-}, 3000);
+// Fetch real-time price every 15 seconds
+setInterval(fetchPrice, 15000);
 
-updateDisplay();
+// Initial fetch
+fetchPrice();
