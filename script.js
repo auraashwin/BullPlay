@@ -32,10 +32,10 @@ function sellStock() {
   }
 }
 
-// Simulate price change every 3 seconds
+// Simulate price changes
 setInterval(() => {
   const change = (Math.random() * 4 - 2); // -2 to +2
-  stockPrice = Math.max(1, stockPrice + change); // Don't allow price below ₹1
+  stockPrice = Math.max(1, stockPrice + change);
   updateDisplay();
 }, 3000);
 
